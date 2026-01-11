@@ -1,0 +1,10 @@
+file 'photo_2022-12-13_23-49-02.jpg'
+duration 1
+file 'pexels-pixabay-57409.jpg'
+duration 1
+file 'red-dodge-challenger-demon-srt-rear-wk.jpg'
+duration 1
+file 'filtered-33B5F046-895D-4644-986C-47A45EC998B2.MP4'
+duration 1
+file '309b1f306b75451483f5d2fffeb689f2.MOV'
+duration 1
