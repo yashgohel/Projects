@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: #eee;
+  scroll-behavior: smooth;
+}
+
+/* Loader */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader-inner {
+  width: 300px;
+}
+
+#loaderLogo {
+  font-family: "Playfair Display", serif;
+  color: white;
+  letter-spacing: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.progress {
+  height: 8px;
+  background: #222;
+}
+
+.progress-bar {
+  width: 0%;
+  background: #d4af37;
+  transition: width 0.1s linear;
+}
+
+#percentText {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+/* Video Hero */
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.hero video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Film Grain */
+.grain {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: url("https://i.imgur.com/8F6s0cR.png");
+  opacity: 0.15;
+  z-index: 999;
+}
+
+/* Light Leak */
+.lightleak {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: url("https://i.imgur.com/NM0K5Xs.png") center/cover;
+  mix-blend-mode: screen;
+  opacity: 0.15;
+  animation: leak 20s linear infinite;
+}
+@keyframes leak {
+  0% {
+    opacity: 0.05;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.05;
+  }
+}
+
+/* Parallax */
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 140px 0;
+  position: relative;
+}
+.parallax::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.parallax .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Portfolio */
+.portfolio img {
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.portfolio img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+footer {
+  background: #000;
+  color: #666;
+  padding: 30px;
+  text-align: center;
+}
