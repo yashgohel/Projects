@@ -1,225 +1,172 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Cinematic Mobile Photography</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>Cinematic Mobile Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
-    <!-- LOADER -->
-    <div id="loader">
-      <div class="loader-inner text-center">
-        <h1 id="loaderLogo">WELCOME!</h1>
-        <div class="progress mt-4">
-          <div id="progressBar" class="progress-bar"></div>
-        </div>
-        <p id="percentText" class="mt-3">0%</p>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner text-center">
+      <h1 id="loaderLogo">WELCOME!</h1>
+      <div class="progress mt-4">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <p id="percentText" class="mt-3">0%</p>
+    </div>
+  </div>
+
+  <div class="grain"></div>
+  <div class="lightleak"></div>
+
+  <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100" style="z-index: 10;">
+    <div class="container d-flex justify-content-center align-items-center">
+      <a class="navbar-brand text-light" href="#">Yash's CinematicLens</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <video autoplay muted loop>
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content">
+      <div>
+        <h1 class="display-3" style="font-family: &quot;Playfair Display&quot;">
+          Frames That Feel Cinematic
+        </h1>
+        <p class="lead mt-3">Shot on mobile. Crafted like cinema.</p>
+        <a href="#portfolio" class="btn btn-warning mt-4">View Work</a>
       </div>
     </div>
+  </section>
 
-    <div class="grain"></div>
-    <div class="lightleak"></div>
-
-    <nav class="navbar navbar-expand-lg fixed-top bg-black">
-      <div class="container">
-        <a class="navbar-brand text-light" href="#">Yash's CinematicLens</a>
-      </div>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero">
-      <video autoplay muted loop>
-        <source src="background.mp4" type="video/mp4" />
-      </video>
-      <div class="hero-content">
-        <div>
-          <h1
-            class="display-3"
-            style="font-family: &quot;Playfair Display&quot;"
-          >
-            Frames That Feel Cinematic
-          </h1>
-          <p class="lead mt-3">Shot on mobile. Crafted like cinema.</p>
-          <a href="#portfolio" class="btn btn-warning mt-4">View Work</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section
-      class="parallax"
-      style="
+  <!-- ABOUT -->
+  <section class="parallax" style="
         background-image: url(&quot;https://images.unsplash.com/photo-1492724441997-5dc865305da7&quot;);
-      "
-    >
-      <div class="container text-center reveal">
-        <h2>About Me</h2>
-        <p>
-          I create cinematic imagery using only my phone — mastering mood, light
-          & story.
-        </p>
-      </div>
-    </section>
+      ">
+    <div class="container text-center reveal">
+      <h2>About Me</h2>
+      <p>
+        I create cinematic imagery using only my phone — mastering mood, light
+        & story.
+      </p>
+    </div>
+  </section>
 
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="py-5">
-      <div class="container text-center reveal">
-        <h2 class="mb-4">Gallery</h2>
-        <div class="row g-4 portfolio">
-          <div class="col-md-4">
-            <img
-              src="abu.jpeg"
-              class="img-fluid"
-              data-bs-toggle="modal"
-              data-bs-target="#imgModal"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="beach.jpeg"
-              class="img-fluid"
-              data-bs-toggle="modal"
-              data-bs-target="#imgModal"
-            />
-          </div>
-          <div class="col-md-4" style="width: 20%">
-            <img
-              src="lights.jpeg"
-              class="img-fluid"
-              data-bs-toggle="modal"
-              data-bs-target="#imgModal"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="moon.jpeg"
-              class="img-fluid"
-              data-bs-toggle="modal"
-              data-bs-target="#imgModal"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="self0.jpeg"
-              class="img-fluid"
-              data-bs-toggle="modal"
-              data-bs-target="#imgModal"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="selfp1.jpeg"
-              class="img-fluid"
-              data-bs-toggle="modal"
-              data-bs-target="#imgModal"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="tree.jpeg"
-              class="img-fluid"
-              data-bs-toggle="modal"
-              data-bs-target="#imgModal"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="tree2.jpeg"
-              class="img-fluid"
-              data-bs-toggle="modal"
-              data-bs-target="#imgModal"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="udaipur.jpeg"
-              class="img-fluid"
-              data-bs-toggle="modal"
-              data-bs-target="#imgModal"
-            />
-          </div>
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="py-5">
+    <div class="container text-center reveal">
+      <h2 class="mb-4">Gallery</h2>
+      <div class="row g-4 portfolio">
+        <div class="col-md-4">
+          <img src="abu.jpeg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imgModal" />
         </div>
-      </div>
-    </section>
-
-    <!-- MODAL -->
-    <div class="modal fade" id="imgModal">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content bg-dark">
-          <div class="modal-body p-0">
-            <img id="modalImg" class="img-fluid" />
-          </div>
+        <div class="col-md-4">
+          <img src="beach.jpeg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imgModal" />
+        </div>
+        <div class="col-md-4" style="width: 20%">
+          <img src="lights.jpeg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imgModal" />
+        </div>
+        <div class="col-md-4">
+          <img src="moon.jpeg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imgModal" />
+        </div>
+        <div class="col-md-4">
+          <img src="self0.jpeg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imgModal" />
+        </div>
+        <div class="col-md-4">
+          <img src="selfp1.jpeg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imgModal" />
+        </div>
+        <div class="col-md-4">
+          <img src="tree.jpeg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imgModal" />
+        </div>
+        <div class="col-md-4">
+          <img src="tree2.jpeg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imgModal" />
+        </div>
+        <div class="col-md-4">
+          <img src="udaipur.jpeg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imgModal" />
         </div>
       </div>
     </div>
+  </section>
 
-    <footer>
-      <p>© 2026 CinematicLens | Designed by Yash</p>
-    </footer>
+  <!-- MODAL -->
+  <div class="modal fade" id="imgModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+          <img id="modalImg" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <footer>
+    <p>© 2026 CinematicLens | Designed by Yash</p>
+  </footer>
 
-    <script>
-      // Loader
-      window.addEventListener("load", () => {
-        const loader = document.getElementById("loader");
-        const bar = document.getElementById("progressBar");
-        const percent = document.getElementById("percentText");
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-        let count = 0;
-        const duration = 2000; // 2 seconds
-        const interval = 30;
-        const increment = 100 / (duration / interval);
+  <script>
+    // Loader
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      const bar = document.getElementById("progressBar");
+      const percent = document.getElementById("percentText");
 
-        const timer = setInterval(() => {
-          count += increment;
-          if (count >= 100) {
-            count = 100;
-            clearInterval(timer);
+      let count = 0;
+      const duration = 2000; // 2 seconds
+      const interval = 30;
+      const increment = 100 / (duration / interval);
 
-            // Fade out loader
-            setTimeout(() => {
-              loader.style.transition = "opacity 0.8s ease";
-              loader.style.opacity = "0";
-              setTimeout(() => (loader.style.display = "none"), 800);
-            }, 300);
-          }
+      const timer = setInterval(() => {
+        count += increment;
+        if (count >= 100) {
+          count = 100;
+          clearInterval(timer);
 
-          bar.style.width = count + "%";
-          percent.textContent = Math.floor(count) + "%";
-        }, interval);
-      });
+          // Fade out loader
+          setTimeout(() => {
+            loader.style.transition = "opacity 0.8s ease";
+            loader.style.opacity = "0";
+            setTimeout(() => (loader.style.display = "none"), 800);
+          }, 300);
+        }
 
-      // Gallery Modal
-      document.querySelectorAll(".portfolio img").forEach((img) => {
-        img.onclick = () => (document.getElementById("modalImg").src = img.src);
-      });
+        bar.style.width = count + "%";
+        percent.textContent = Math.floor(count) + "%";
+      }, interval);
+    });
 
-      // Scroll Reveal
-      const reveals = document.querySelectorAll(".reveal");
-      window.addEventListener("scroll", () => {
-        reveals.forEach((r) => {
-          const top = r.getBoundingClientRect().top;
-          if (top < window.innerHeight - 100)
-            ((r.style.opacity = 1), (r.style.transform = "translateY(0)"));
-        });
-      });
+    // Gallery Modal
+    document.querySelectorAll(".portfolio img").forEach((img) => {
+      img.onclick = () => (document.getElementById("modalImg").src = img.src);
+    });
+
+    // Scroll Reveal
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
       reveals.forEach((r) => {
-        r.style.opacity = 0;
-        r.style.transform = "translateY(40px)";
-        r.style.transition = "1s";
+        const top = r.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100)
+          ((r.style.opacity = 1), (r.style.transform = "translateY(0)"));
       });
-    </script>
-  </body>
+    });
+    reveals.forEach((r) => {
+      r.style.opacity = 0;
+      r.style.transform = "translateY(40px)";
+      r.style.transition = "1s";
+    });
+  </script>
+</body>
+
 </html>
